@@ -3,131 +3,344 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Kobawala's Travel House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Caudex', serif; }
+        .bg-custom { background-color: rgb(247, 244, 244); }
+        .hero-section { 
+            background-image: url('world3.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 638px;
+        }
+        .service-card {
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-<div class='wrapper'>
-  <div class="container">
-    <header id="home">
-      <nav class="navbar">
-        <h2 class='name'><img class="title-logo" src="kth.jpeg" alt="profile-image"><img class="title-logo-tag" src="tag.bmp" alt="profile-image-tag"></h2>
-        <ul class="navbar__ul">
-          <li class='link'><a href="#home">Home</a></li>
-          <li class='link'><a href="#portfolio">Services</a></li>
-          <li class='link'><a href="#skills">Visa</a></li>
-          <li class='link'><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
 
-  <div class='wrapper class-wrapper'>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
     <div class="container">
-      <div style="text-align: center;"></div>
+        <a class="navbar-brand" href="#home">
+            <img src="kth.jpeg" alt="profile-image" height="70">
+            <img src="tag.bmp" alt="profile-image-tag" height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="#service">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#visa">VISA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="header__container">
-      <div class="header__text__container">
-          <h1 class='header__text'><img src="1.png" style="width: 700px;"></h1>
-          <h3 class='header__text'>Your Travel Partner Since 1999</h3>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center" id="home">
+    <div class="container text-center">
+        <img src="1.png" alt="Hero Image" class="img-fluid" style="max-width: 700px;">
+        <h3 class="mt-4 text-dark">Your Travel Partner Since 1999</h3>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="py-5 bg-light" id="about-us">
+    <div class="container">
+        <h2 class="text-center mb-4">ABOUT US</h2>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <p>Welcome to Kobawala's Travel House, your trusted partner in creating seamless and unforgettable travel experiences.</p>
+                <p>Founded in April 1999 by Brijesh Ashokkumar Kobawala and Asheshkumar Ashokkumar Kobawala, our roots in the tourism industry run deep.</p>
+                <p>As a proud third-generation travel company, our family's legacy in the travel business dates back to our grandfather's pioneering work in this field.</p>
+                <p>Over the years, we have built a reputation for excellence, trust, and personalized service.</p>
+            </div>
+        </div>
+        
+        <h2 class="text-center mb-4">OUR MISSION</h2>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <p>At Kobawala's Travel House, our mission is simple yet profound: to make your holiday booking and on-ground support as seamless and smooth as possible.</p>
+                <p>We are committed to ensuring that every aspect of your travel experience is hassle-free and enjoyable, so you can focus on creating memories that last a lifetime.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" id="service">
+    <div class="container">
+        <h2 class="text-center mb-4">SERVICES</h2>
+        <p class="text-center mb-4">We offer a comprehensive range of travel services, including</p>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Bookings</h5>
+                        <p class="card-text">Domestic and International Tailored to suit your preferences and budget.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Flight Bookings</h5>
+                        <p class="card-text">Domestic and International with Efficient and affordable ticketing for your journeys.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Visa Assistance</h5>
+                        <p class="card-text">Simplifying the complex process of obtaining travel visas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Individual and Group Tour Packages</h5>
+                        <p class="card-text">Curated experiences for solo travelers, families, and groups.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Corporate Travel Packages</h5>
+                        <p class="card-text">Expertly managed travel solutions for businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm service-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Passport Assistance</h5>
+                        <p class="card-text">We provide passport Assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Choose Us section -->
+<section class="py-5 bg-light" id="about-us">
+  <div class="container p-4">
+    <div class="ml-2 mr-3">
+
+      <h2 class="text-center mb-4">Why Us ??</h2>
+      <div class="card mb-4 shadow-sm" style="padding: 20px;">
+        <h4>
+          What Sets Us Apart
+        </h4> 
+        <div class="card-body">
+          <p>At Kobawala's Travel House, we pride ourselves on being more than just a travel agency.</p>
+          <p>We are your dependable travel companion, available 24/7 to assist you at every step of your journey. </p>
+          <p>Our direct connections with tourism partners worldwide enable us to offer the best prices and unparalleled on-ground support.</p>
+          <p>No matter where you go, we are always just a call away, ensuring your trip is as stress-free as possible.</p>
+        </div>
+        <hr/>
+        <h4>
+          Why Choose Us 
+        </h4>
+        <div class="card-body">
+          <p>Our unwavering commitment to exceptional service has earned us the loyalty of countless clients.</p>
+          <p>By staying connected and offering continuous support throughout their travels, we build lasting relationships that turn first-time customers into lifelong partners.</p>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <hr class="lines"/>
-
-  <main class="portfolio" id='portfolio'>
-    <h2 class='portfolio__header'>Services</h2>
-    <div class="portfolio__container">
-      <article class='card'>
-        <img src='https://cdn-icons-png.flaticon.com/512/3437/3437297.png' alt="page">
-        <div class="text-container">
-          <h2>Travel Booking</h2>
-          <p>Domestic and International Travel arrangement including packages and booking. </p>
-        </div>
-      </article>
-
-      <article class='card'>
-        <img src='https://cdn-icons-png.flaticon.com/512/993/993725.png' alt="page">
-        <div class="text-container">
-          <h2>Hotel Booking</h2>
-          <p>Domestic and International Hotel booking.</p>
-        </div>
-      </article>
-
-      <article class='card'>
-        <img src='https://cdn-icons-png.flaticon.com/512/1055/1055645.png' alt="app">
-        <div class="text-container">
-          <h2>Overseas Insurance</h2>
-          <p>We provide Overseas Insurance while travelling.</p>
-        </div>
-      </article>
-
-      <article class='card'>
-        <img src='https://cdn-icons-png.flaticon.com/512/4257/4257674.png' alt="app">
-        <div class="text-container">
-          <h2>Passport Assistance</h2>
-          <p>We provide help to apply for passport assistance.</p>
-        </div>
-      </article>
-    </div>
-
-    <section class='skills' id='skills'>
-      <h2>Visa Help</h2>
-      <article class="skills-container">
-        <div class="skills__item" data-aos='fade-up'>
-          <img class="visa-fix" src="student-removebg-preview.png" alt="JS">
-          <p><strong>Student Visa</strong></p>
-        </div>
-
-        <div class="skills__item" data-aos='fade-up'>
-          <img class="visa-fix" src="travel-removebg-preview.png" alt="HTML5">
-          <p><strong>Travel Visa</strong></p>
-        </div>
-
-        <div class="skills__item" data-aos='fade-up'>
-          <img class="visa-fix" src="work-removebg-preview.png" alt="css">
-          <p><strong>Business Visa</strong></p>
-        </div>
-      </article>
-    </section>
-
-    <footer>
-      <div class="wrapper">
-        <div class="footer__text-container" id='contact'>
-          <h2>Contact</h2>
-          <p>Lets connect if you want to more about us and out services...</p>
-        </div>
-        <div class="footer__text-container1">
-          <h3>Mr. Ashesh Kobawala</h3>
-          <div class="footer_contact">           
-            <span class='phone'><i class="fas fa-phone"></i>: </span> <span class="contact-number">+91 98790 13655</span>
-            <div><span class='email'><i class="fas fa-envelope"></i>: </span> <span class="contact-email">kobawalatravel@gmail.com</span></div>
-          </div>
-        </div>
-        <div class="footer__text-container1">
-          <h3>Mr. Brijesh Kobawala</h3>
-          <div class="footer_contact">
-            <span class='phone'><i class="fas fa-phone"></i>: </span> <span class="contact-number">+91 94266 23655</span>
-            <div><span class='email'><i class="fas fa-envelope"></i>:</span> <span class="contact-email">info@kobawalatravel.com</span>
+<!-- Visa Flag Section -->
+<section class="py-5 bg-light" id="visa">
+    <div class="container">
+        <h2 class="text-center mb-4">Countries we offer visa for</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/australia.svg" alt="Australia" class="me-2" style="width: 30px;">
+                    <span>AUSTRALIA</span>
+                </div>
             </div>
+            <!-- Repeat for other countries -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/austria.svg" alt="Austria" class="me-2" style="width: 30px;">
+            <span>AUSTRIA</span>
           </div>
         </div>
-      </div>
-      <hr class='footer__nav-hr'>
-      <nav class="footer__nav">
-        <h2><img class="title-logo" src="kth.jpeg" alt="profile-image"><img class="title-logo" src="tag.bmp" alt="profile-image"></h2>
-        <ul class='footer__nav-links'>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#portfolio">Services</a></li>
-          <li class='link'><a href="#skills">Visa</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </main>
-</div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/canada.svg" alt="Canada" class="me-2" style="width: 30px;">
+            <span>CANADA</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/china.svg" alt="China" class="me-2" style="width: 30px;">
+            <span>CHINA</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/japan.svg" alt="Japan" class="me-2" style="width: 30px;">
+            <span>JAPAN</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/usa.svg" alt="USA" class="me-2" style="width: 30px;">
+            <span>USA</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/mexico.svg" alt="Mexico" class="me-2" style="width: 30px;">
+            <span>MEXICO</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/netherland.svg" alt="Netherlands" class="me-2" style="width: 30px;">
+            <span>NETHERLANDS</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/france.svg" alt="France" class="me-2" style="width: 30px;">
+            <span>FRANCE</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/germany.svg" alt="Germany" class="me-2" style="width: 30px;">
+            <span>GERMANY</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/indonesia.svg" alt="Indonesia" class="me-2" style="width: 30px;">
+            <span>INDONESIA</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/italy.svg" alt="Italy" class="me-2" style="width: 30px;">
+            <span>ITALY</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/turkey.svg" alt="Turkey" class="me-2" style="width: 30px;">
+            <span>TURKEY</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/vietnam.svg" alt="Vietnam" class="me-2" style="width: 30px;">
+            <span>VIETNAM</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="d-flex align-items-center">
+            <img src="flag/uk.svg" alt="United Kingdom" class="me-2" style="width: 30px;">
+            <span>UNITED KINGDOM</span>
+          </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<footer class="py-5 bg-white" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact</h2>
+        <p class="text-center mb-5">Let's connect if you want to know more about us and our services...</p>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Mr. Ashesh Kobawala</h5>
+                        <p class="card-text">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="https://wa.me/+919879013655" class="text-decoration-none">+91 98790 13655</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Mr. Brijesh Kobawala</h5>
+                        <p class="card-text">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="https://wa.me/+919426623655" class="text-decoration-none">+91 94266 23655</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Mr. Dhruve Kobawala</h5>
+                        <p class="card-text">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="https://wa.me/+919429069925" class="text-decoration-none">+91 94290 69925</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+              <div class="h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Email Us</h5>
+                  <p class="card-text">
+                    <i class="fas fa-envelope me-2"></i>
+                    <a href="mailto:kobawalatravel@gmail.com" class="text-decoration-none">kobawalatravel@gmail.com</a>
+                  </p>
+                  <p class="card-text">
+                    <i class="fas fa-envelope me-2"></i>
+                    <a href="mailto:info@kobawalatravel.com" class="text-decoration-none">info@kobawalatravel.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Address Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Address</h2>
+    <p class="text-center mb-4">Head Office - 212 IInd Floor Dev Arcade, Nr Naranpura Rly Crossing, Naranpura Ahmedabad 380013 Gujarat India</p>
+    <div class="text-center">
+      <a href="https://www.google.com/maps/place/212+IInd+Floor+Dev+Arcade,+Nr+Naranpura+Rly+Crossing,+Naranpura+Ahmedabad+380013+Gujarat+India" target="_blank" class="btn btn-primary">
+        View on Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
