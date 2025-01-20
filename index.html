@@ -9,9 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Caudex', serif; }
-        .bg-custom { background-color: rgb(247, 244, 244); }
-        .hero-section { 
-            background-image: url('world3.jpg');
+        .hero-section {
+            background-image: url('back.jpg');
             background-size: cover;
             background-position: center;
             min-height: 638px;
@@ -22,6 +21,20 @@
         .service-card:hover {
             transform: scale(1.05);
         }
+        /* Background Colors */
+        .bg-hero { background-color: rgba(0, 0, 0, 0.6); color: white; }
+        .bg-about { background-color: #f0f8ff; color: #333; }
+        .bg-services { background-color: #f5f5dc; color: #333; }
+        .bg-choose-us { background-color: #f0f8ff; color: #333; }
+        .bg-visa { background-color: #f0f8ff; color: #333; }
+        .bg-contact { background-color: #f5f5dc; color: #333; }
+        .bg-address { background-color: #f0f8ff; color: #333; }
+        
+        /* Buttons */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +43,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
     <div class="container">
         <a class="navbar-brand" href="#home">
-            <img src="kth.jpeg" alt="profile-image" height="70">
+            <img src="krh.jpg" alt="profile-image" height="70">
             <img src="tag.bmp" alt="profile-image-tag" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -49,15 +62,23 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-section d-flex align-items-center" id="home">
+<section class="hero-section d-flex align-items-center bg-hero" id="home">
     <div class="container text-center">
-        <img src="1.png" alt="Hero Image" class="img-fluid" style="max-width: 700px;">
-        <h3 class="mt-4 text-dark">Your Travel Partner Since 1999</h3>
+      <div>
+        <span class="d-block text-white p-2 rounded" style="max-width: 700px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.8);">
+          <img src="1.png" alt="Hero Image" class="img-fluid" style="max-width: 700px;">
+        </span>
+        <h3 class="mt-4 text-light">
+          <span class="text-black p-2 rounded" style="background-color: rgba(255, 255, 255, 0.8);"> 
+            Your Trusted Travel Partner Since 1999<sup>&reg;</sup>
+          </span>
+        </h3>
+      </div>
     </div>
 </section>
 
 <!-- About Us Section -->
-<section class="py-5 bg-light" id="about-us">
+<section class="py-5 bg-about" id="about-us">
     <div class="container">
         <h2 class="text-center mb-4">ABOUT US</h2>
         <div class="card mb-4 shadow-sm">
@@ -80,7 +101,7 @@
 </section>
 
 <!-- Services Section -->
-<section class="py-5" id="service">
+<section class="py-5 bg-services" id="service">
     <div class="container">
         <h2 class="text-center mb-4">SERVICES</h2>
         <p class="text-center mb-4">We offer a comprehensive range of travel services, including</p>
@@ -138,37 +159,32 @@
     </div>
 </section>
 
-<!-- Choose Us section -->
-<section class="py-5 bg-light" id="about-us">
-  <div class="container p-4">
-    <div class="ml-2 mr-3">
-
-      <h2 class="text-center mb-4">Why Us ??</h2>
-      <div class="card mb-4 shadow-sm" style="padding: 20px;">
-        <h4>
-          What Sets Us Apart
-        </h4> 
-        <div class="card-body">
-          <p>At Kobawala's Travel House, we pride ourselves on being more than just a travel agency.</p>
-          <p>We are your dependable travel companion, available 24/7 to assist you at every step of your journey. </p>
-          <p>Our direct connections with tourism partners worldwide enable us to offer the best prices and unparalleled on-ground support.</p>
-          <p>No matter where you go, we are always just a call away, ensuring your trip is as stress-free as possible.</p>
+<!-- Choose Us Section -->
+<section class="py-5 bg-choose-us" id="about-us">
+    <div class="container p-4">
+        <div class="ml-2 mr-3">
+            <h2 class="text-center mb-4">Why Us ??</h2>
+            <div class="card mb-4 shadow-sm" style="padding: 20px;">
+                <h4>What Sets Us Apart</h4> 
+                <div class="card-body">
+                    <p>At Kobawala's Travel House, we pride ourselves on being more than just a travel agency.</p>
+                    <p>We are your dependable travel companion, available 24/7 to assist you at every step of your journey. </p>
+                    <p>Our direct connections with tourism partners worldwide enable us to offer the best prices and unparalleled on-ground support.</p>
+                    <p>No matter where you go, we are always just a call away, ensuring your trip is as stress-free as possible.</p>
+                </div>
+                <hr/>
+                <h4>Why Choose Us</h4>
+                <div class="card-body">
+                    <p>Our unwavering commitment to exceptional service has earned us the loyalty of countless clients.</p>
+                    <p>By staying connected and offering continuous support throughout their travels, we build lasting relationships that turn first-time customers into lifelong partners.</p>
+                </div>
+            </div>
         </div>
-        <hr/>
-        <h4>
-          Why Choose Us 
-        </h4>
-        <div class="card-body">
-          <p>Our unwavering commitment to exceptional service has earned us the loyalty of countless clients.</p>
-          <p>By staying connected and offering continuous support throughout their travels, we build lasting relationships that turn first-time customers into lifelong partners.</p>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- Visa Flag Section -->
-<section class="py-5 bg-light" id="visa">
+<section class="py-5 bg-visa" id="visa">
     <div class="container">
         <h2 class="text-center mb-4">Countries we offer visa for</h2>
         <div class="row g-3">
@@ -179,96 +195,96 @@
                 </div>
             </div>
             <!-- Repeat for other countries -->
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/austria.svg" alt="Austria" class="me-2" style="width: 30px;">
-            <span>AUSTRIA</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/canada.svg" alt="Canada" class="me-2" style="width: 30px;">
-            <span>CANADA</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/china.svg" alt="China" class="me-2" style="width: 30px;">
-            <span>CHINA</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/japan.svg" alt="Japan" class="me-2" style="width: 30px;">
-            <span>JAPAN</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/usa.svg" alt="USA" class="me-2" style="width: 30px;">
-            <span>USA</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/mexico.svg" alt="Mexico" class="me-2" style="width: 30px;">
-            <span>MEXICO</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/netherland.svg" alt="Netherlands" class="me-2" style="width: 30px;">
-            <span>NETHERLANDS</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/france.svg" alt="France" class="me-2" style="width: 30px;">
-            <span>FRANCE</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/germany.svg" alt="Germany" class="me-2" style="width: 30px;">
-            <span>GERMANY</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/indonesia.svg" alt="Indonesia" class="me-2" style="width: 30px;">
-            <span>INDONESIA</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/italy.svg" alt="Italy" class="me-2" style="width: 30px;">
-            <span>ITALY</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/turkey.svg" alt="Turkey" class="me-2" style="width: 30px;">
-            <span>TURKEY</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/vietnam.svg" alt="Vietnam" class="me-2" style="width: 30px;">
-            <span>VIETNAM</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="d-flex align-items-center">
-            <img src="flag/uk.svg" alt="United Kingdom" class="me-2" style="width: 30px;">
-            <span>UNITED KINGDOM</span>
-          </div>
-        </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/austria.svg" alt="Austria" class="me-2" style="width: 30px;">
+                    <span>AUSTRIA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/canada.svg" alt="Canada" class="me-2" style="width: 30px;">
+                    <span>CANADA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/china.svg" alt="China" class="me-2" style="width: 30px;">
+                    <span>CHINA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/japan.svg" alt="Japan" class="me-2" style="width: 30px;">
+                    <span>JAPAN</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/usa.svg" alt="USA" class="me-2" style="width: 30px;">
+                    <span>USA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/mexico.svg" alt="Mexico" class="me-2" style="width: 30px;">
+                    <span>MEXICO</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/netherland.svg" alt="Netherlands" class="me-2" style="width: 30px;">
+                    <span>NETHERLANDS</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/france.svg" alt="France" class="me-2" style="width: 30px;">
+                    <span>FRANCE</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/germany.svg" alt="Germany" class="me-2" style="width: 30px;">
+                    <span>GERMANY</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/indonesia.svg" alt="Indonesia" class="me-2" style="width: 30px;">
+                    <span>INDONESIA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/italy.svg" alt="Italy" class="me-2" style="width: 30px;">
+                    <span>ITALY</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/turkey.svg" alt="Turkey" class="me-2" style="width: 30px;">
+                    <span>TURKEY</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <img src="flag/vietnam.svg" alt="Vietnam" class="me-2" style="width: 30px;">
+                    <span>VIETNAM</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="d-flex align-items-center">
+                    <!-- <img src="flag/uk.svg" alt="United Kingdom" class="me-2" style="width: 30px;"> -->
+                    <span>And many more ....</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<footer class="py-5 bg-white" id="contact">
+<footer class="py-5 bg-contact" id="contact">
     <div class="container">
         <h2 class="text-center mb-4">Contact</h2>
         <p class="text-center mb-5">Let's connect if you want to know more about us and our services...</p>
@@ -299,10 +315,7 @@
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Mr. Dhruve Kobawala</h5>
-                        <p class="card-text">
-                            <i class="fas fa-phone me-2"></i>
-                            <a href="https://wa.me/+919429069925" class="text-decoration-none">+91 94290 69925</a>
+                        <h5 class="card-title">Mr. Dhruv Kobawala</h5> 69925</a>
                         </p>
                     </div>
                 </div>
