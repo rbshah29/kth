@@ -10,10 +10,18 @@
     <style>
         body { font-family: 'Caudex', serif; }
         .hero-section {
-            background-image: url('back.jpg');
+            background-image: url('2.png');
             background-size: cover;
             background-position: center;
             min-height: 638px;
+            animation: changeImage 10s infinite;
+        }
+
+        @keyframes changeImage {
+            0% { background-image: url('2.png'); }
+            33% { background-image: url('back.jpg'); }
+            66% { background-image: url('back3.jpg'); }
+            100% { background-image: url('back2.jpeg'); }
         }
         .service-card {
             transition: transform 0.3s;
@@ -66,11 +74,15 @@
     <div class="container text-center">
       <div>
         <span class="d-block text-white p-2 rounded" style="max-width: 700px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.8);">
-          <img src="1.png" alt="Hero Image" class="img-fluid" style="max-width: 700px;">
+          <div style="position: relative; display: inline-block; max-width: 700px; margin: 0 auto;">
+            <img src="1.png" alt="Hero Image" class="img-fluid" style="max-width: 100%; display: block;">
+            <sup style="position: absolute; top: 10px; right: 10px; font-size: 18px; color: black;">&reg;</sup>
+        </div>
+        
         </span>
         <h3 class="mt-4 text-light">
-          <span class="text-black p-2 rounded" style="background-color: rgba(255, 255, 255, 0.8);"> 
-            Your Trusted Travel Partner Since 1999<sup>&reg;</sup>
+            <span class="text-black p-2 rounded fw-bold" style="background-color: rgba(255, 255, 255, 0.8);"> 
+            Your Trusted Travel Partner Since 1999
           </span>
         </h3>
       </div>
@@ -315,7 +327,10 @@
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Mr. Dhruv Kobawala</h5> 69925</a>
+                        <h5 class="card-title">Mr. Dhruv Kobawala</h5> 
+                        <p class="card-text">
+                          <i class="fas fa-phone me-2"></i>
+                          <a href="https://wa.me/+919429069925" class="text-decoration-none">+91 94290 69925</a>
                         </p>
                     </div>
                 </div>
